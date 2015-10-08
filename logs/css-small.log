@@ -1,0 +1,165 @@
+[[[[[ ~/tmp/private-bench/site ]]]]]
+
+=> Started proxy.
+=> Started MongoDB.
+| 
+| JsImage#load: 1037.1
+|     other JsImage#load: 1036.3
+| files.writeFile: 141.9
+| Select Package Versions: 12582.6
+|     Input#loadFromCatalog (sqlite): 11217.2
+|     new CS.Solver: 97.2
+|         Solver#analyze: 96.7
+|             analyze constraints: 57.6
+|     Solver#getAnswer: 1244.0
+|         new Logic.Solver (MiniSat start-up): 51.9
+|         generate constraints: 81.9
+|         pre-solve: 101.3
+|         minimize total_packages: 844.1
+| 
+| Input#loadFromCatalog (sqlite): 11217.2
+| other JsImage#load: 1036.3
+| minimize total_packages: 844.1
+| files.writeFile: 141.9
+| pre-solve: 101.3
+| generate constraints: 81.9
+| analyze constraints: 57.6
+| new Logic.Solver (MiniSat start-up): 51.9
+| Total: 13532.3
+| 
+| JsImage#load: 1437.6
+|     other JsImage#load: 1436.6
+| files.exists: 84.2
+| Rebuild App: 13014.5
+|     compiler.compile(the app): 9857.2
+|         Isopack#ensurePluginsInitialized: 9392.6
+|             JsImage#load: 6489.6
+|                 files.exists: 1661.4
+|                 other JsImage#load: 4828.3
+|             other Isopack#ensurePluginsInitialized: 2903.0
+|         files.stat: 84.0
+|         files.readFile: 180.6
+|         other compiler.compile(the app): 167.2
+|     bundler.bundle..makeClientTarget: 438.2
+|         Target#make: 437.6
+|             Target#_runCompilerPlugins: 87.2
+|             Target#_emitResources: 188.9
+|                 PackageSourceBatch#getResources: 178.5
+|                     PackageSourceBatch#_linkJS: 174.5
+|                         files.readFile: 51.9
+|                         other PackageSourceBatch#_linkJS: 104.7
+|             ClientTarget#minifyCss: 84.1
+|     bundler.bundle..makeServerTarget: 371.4
+|         Target#make: 370.5
+|             Target#_runCompilerPlugins: 101.3
+|                 other Target#_runCompilerPlugins: 54.7
+|             Target#_emitResources: 214.7
+|                 PackageSourceBatch#getResources: 175.8
+|                     PackageSourceBatch#_linkJS: 171.5
+|                         other PackageSourceBatch#_linkJS: 110.3
+|     bundler..writeSiteArchive: 2322.6
+|         bundler..writeTargetToPath: 1833.4
+|             ClientTarget#write: 339.8
+|                 Builder#write: 91.0
+|                 bundler..writeFile: 109.9
+|                     Builder#write: 108.0
+|                 other ClientTarget#write: 136.8
+|             ServerTarget#write: 1483.1
+|                 JsImage#write: 1444.5
+|                     Builder#write: 1002.7
+|                         files.stat: 221.3
+|                         files.writeFile: 322.3
+|                         files.rename: 116.9
+|                         other Builder#write: 261.2
+|                     other JsImage#write: 405.5
+|         Builder#complete: 463.4
+|             files.rm_recursive: 463.0
+| 
+| other JsImage#load: 6264.9
+| other Isopack#ensurePluginsInitialized: 2903.0
+| files.exists: 1746.5
+| files.rm_recursive: 471.6
+| other JsImage#write: 405.5
+| files.writeFile: 405.4
+| files.stat: 352.1
+| other Builder#write: 312.2
+| files.readFile: 309.7
+| other PackageSourceBatch#_linkJS: 215.0
+| other compiler.compile(the app): 167.2
+| files.rename: 147.0
+| sha1: 141.9
+| other ClientTarget#write: 136.8
+| other Target#_runCompilerPlugins: 97.5
+| Isopack#getUnibuildAtArch: 95.0
+| ClientTarget#minifyCss: 84.1
+| other Target#make: 57.2
+| Total: 14312.8
+=> Started your app.
+
+=> App running at: http://localhost:6020/
+=> Server modified -- restarting...| 
+| Select Package Versions: 8679.5
+|     Input#loadFromCatalog (sqlite): 8427.7
+|     other Select Package Versions: 243.2
+| 
+| Input#loadFromCatalog (sqlite): 8427.7
+| other Select Package Versions: 243.2
+| Total: 8670.9
+| 
+| files.writeFile: 158.4
+| Rebuild App: 3342.9
+|     compiler.compile(the app): 395.7
+|         files.stat: 82.7
+|         files.readFile: 162.8
+|         other compiler.compile(the app): 129.7
+|     bundler.bundle..makeClientTarget: 342.2
+|         Target#make: 341.9
+|             Target#_runCompilerPlugins: 126.3
+|                 processing files with ecmascript (for target web.browser): 78.8
+|                     other processing files with ecmascript (for target web.browser): 78.7
+|             Target#_emitResources: 152.6
+|                 PackageSourceBatch#getResources: 147.2
+|                     PackageSourceBatch#_linkJS: 144.2
+|                         other PackageSourceBatch#_linkJS: 74.6
+|     bundler.bundle..makeServerTarget: 250.4
+|         Target#make: 250.1
+|             Target#_runCompilerPlugins: 61.0
+|             Target#_emitResources: 151.4
+|                 PackageSourceBatch#getResources: 121.6
+|                     PackageSourceBatch#_linkJS: 118.7
+|                         other PackageSourceBatch#_linkJS: 66.7
+|     bundler..writeSiteArchive: 2337.7
+|         bundler..writeTargetToPath: 1844.6
+|             ClientTarget#write: 223.4
+|                 Builder#write: 74.1
+|                 bundler..writeFile: 70.6
+|                     Builder#write: 69.3
+|                 other ClientTarget#write: 76.8
+|             ServerTarget#write: 1614.6
+|                 JsImage#write: 1591.1
+|                     Builder#write: 1171.7
+|                         sha1: 50.2
+|                         files.stat: 279.8
+|                         files.writeFile: 383.8
+|                         files.rename: 151.5
+|                         other Builder#write: 269.7
+|                     other JsImage#write: 375.0
+|         Builder#complete: 482.2
+|             files.rm_recursive: 481.7
+| 
+| files.writeFile: 596.1
+| files.rm_recursive: 483.8
+| files.stat: 401.6
+| other JsImage#write: 375.0
+| other Builder#write: 306.1
+| files.readFile: 255.4
+| files.rename: 173.2
+| sha1: 141.9
+| other PackageSourceBatch#_linkJS: 141.4
+| other compiler.compile(the app): 129.7
+| other processing files with ecmascript (for target web.browser): 78.7
+| other ClientTarget#write: 76.8
+| Isopack#getUnibuildAtArch: 70.5
+| other Target#_runCompilerPlugins: 62.3
+| Total: 3292.5
+                                   => Meteor server restarted
